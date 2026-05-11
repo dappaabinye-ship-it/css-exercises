@@ -22,6 +22,7 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
   display:flex;
   padding:16px;
+  gap:16px;
 }
 
 .icon {
@@ -74,4 +75,13 @@ button.cancel {
 .f2{
   display:flex;
   justify-content:space-between;
+  padding-bottom: 8px;
+}
+
+.f3{
+  padding-top: 16px;
+}
+
+.header{
+  font-weight: 900;
 }
