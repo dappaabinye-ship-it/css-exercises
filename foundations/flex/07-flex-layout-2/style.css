@@ -4,25 +4,34 @@ body {
   min-height: 100vh;
   display:flex;
   flex-direction:column;
-  justify-content: space-between;
+  padding:0;
+  justify-content: stretch;
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .sidebar {
-  width: 300px;
+  width:300px;
   background: royalblue;
   box-sizing: border-box;
+  justify-content:center;
+  display: flex;
 }
 
 .card {
@@ -34,13 +43,16 @@ body {
 .page{
   display:flex;
   gap:16px
-  flex:1;
+  flex-grow:1;
+  padding:0;
+    flex:1;
 }
 
 .content{
   display:flex;
   flex-wrap:wrap;
   align-items:stretch;
+
 }
 
 .card{
@@ -50,7 +62,15 @@ body {
   margin:8px;
 }
 
-.grow{
-  display:flex;
-  flex-direction:column;
+ul{
+  list-style:none;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+a{
+  text-decoration:none;
+  color:white;
 }
